@@ -1,5 +1,5 @@
 # A-simple-Dropbox-clone
-# Concurrent File Server System (Phase 2)
+# Concurrent File Server System 
 
 ##  Project Overview
 This project implements a **multi-threaded file server system** in C using **thread pools, queues, and synchronized user management**.  
@@ -27,4 +27,13 @@ This is the **Phase 2 submission**, focusing on **concurrency, correctness, and 
 ---
 
 ##  Project Structure
+📦 Concurrent-File-Server
+┣ 📜 Makefile
+┣ 📜 server.c → Handles client connections and task dispatching
+┣ 📜 client.c → Simple client to connect and send commands
+┣ 📜 queue.c/.h → Thread-safe queue implementation
+┣ 📜 threadpool.c/.h → Thread pool for worker threads
+┣ 📜 task.c/.h → Task structure and handler functions
+┣ 📜 user.c/.h → User management, sessions, and per-file locks
+┣ 📜 README.md → Project documentation and run instructions
 
